@@ -1,31 +1,45 @@
 # James Sneddon — Data Science Portfolio
 
-Selected projects from my data science program at Bellevue University, spanning
-sports analytics, natural language processing, and agricultural modeling.
-
-📄 **Portfolio site:** enable GitHub Pages (Settings → Pages → deploy from `main`, `/docs` folder) and this repo doubles as a website.
+I'm a data science student at Bellevue University and a professional goalkeeper
+in USL League One. Most of my work sits somewhere between soccer and stats,
+but not all of it. These are the three projects from my program I'm most proud
+of.
 
 ## Projects
 
-| Project | Domain | Highlights |
-|---|---|---|
-| [USL Match Points Predictor](usl-match-points-predictor/) | Sports analytics | End-to-end pipeline: EDA → feature engineering → Ridge & gradient-boosted models → interactive Dash app. Integrates American Soccer Analysis goals-added (g+) goalkeeper data. |
-| [IMDB 50K Sentiment Analysis](imdb-sentiment-nlp/) | NLP | Text normalization and TF-IDF/Word2Vec feature engineering, then Logistic Regression and Linear SVC sentiment classifiers. Includes a CRF named-entity tagger side project. |
-| [Almond Chill Accumulation vs. Yield](almond-chill-accumulation/) | Agriculture / regression | USDA NASS + NOAA weather wrangling, chill-hours feature engineering, OLS modeling of Fresno County almond yield, with an ethics writeup. |
+**[USL Match Points Predictor](usl-match-points-predictor/)**
+I wanted to know how many points a team should expect from a match based on
+how it played, and how much of that comes down to the goalkeeper. Three
+notebooks take USL Championship 2025 match data from EDA through feature
+engineering to a tuned gradient-boosted model, and a small Dash app lets you
+play with the inputs and see the prediction change. Goalkeeper value comes in
+through American Soccer Analysis goals-added (g+) numbers, which I care about
+for obvious reasons.
 
-## Data availability
+**[IMDB 50K Sentiment Analysis](imdb-sentiment-nlp/)**
+Text analytics coursework on the classic IMDB reviews dataset. One notebook
+does the cleanup and feature engineering (TF-IDF and Word2Vec), the other
+trains and compares Logistic Regression and Linear SVC classifiers. There's
+also a CRF named-entity tagger in there from the same course.
 
-Raw datasets are **not** included in this repo:
+**[Almond Chill Accumulation vs. Yield](almond-chill-accumulation/)**
+A group project asking whether cold winters predict almond harvests in Fresno
+County. I handled the modeling pass: wrangling USDA and NOAA data, building
+chill-hour features, and running the regressions. It's small data with real
+confounds, and the notebook is honest about both.
 
-- **USL Championship 2025 match data** — compiled from public match statistics; feature-engineered CSV available on request.
-- **Goalkeeper goals-added (g+)** — from [American Soccer Analysis](https://www.americansocceranalysis.com/); download their goalkeeper g+ tables directly.
-- **IMDB 50K Movie Reviews** — the standard [Kaggle/Stanford dataset](https://ai.stanford.edu/~amaas/data/sentiment/).
-- **USDA NASS Quick Stats** and **NOAA LCD** exports — public data; pull parameters are documented inside the almond notebooks.
+## About the data
 
-Notebooks are committed with executed outputs so results are viewable without re-running.
+None of the raw data lives in this repo. The IMDB dataset is the standard
+[Stanford/Kaggle release](https://ai.stanford.edu/~amaas/data/sentiment/), the
+goalkeeper g+ tables come from
+[American Soccer Analysis](https://www.americansocceranalysis.com/), and the
+almond project uses public USDA NASS and NOAA exports (pull details are in the
+notebooks). The USL match dataset I compiled myself; happy to share it if you
+ask. All notebooks are committed with their outputs, so you can read the
+results without running anything.
 
-## About
+## Site
 
-James Sneddon — B.S. Data Science (in progress), Bellevue University.
-Goalkeeper & data analyst with USL League One experience; I build models where
-football and data meet.
+This repo doubles as a website via GitHub Pages:
+[jamesneddon35.github.io/DSC-450-Individual](https://jamesneddon35.github.io/DSC-450-Individual/)

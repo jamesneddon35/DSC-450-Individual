@@ -1,9 +1,7 @@
 # James Sneddon
 
 **Data scientist & goalkeeper.** B.S. Data Science (in progress), Bellevue
-University, with professional soccer experience in USL League One. I build
-models where football and data meet — plus NLP and applied-regression work
-from outside the sport.
+University, with professional soccer experience in USL League One.
 
 ---
 
